@@ -2,6 +2,23 @@
 
 > A Vue.js project
 
+### Use
+```js
+mounted() {
+  this.$wxShare(
+    {
+      title: "", // 分享标题
+      desc: "", // 分享描述
+      link: location.href, // 分享链接
+      imgUrl: `` // 分享图标
+    },
+    () => {
+      // 分享成功的回调
+    }
+  );
+}
+```
+
 ## Build Setup
 
 ``` bash
